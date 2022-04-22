@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Google Compute Engine 1</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on key <a target="_blank" href="https://cloud.google.com/compute/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Google Compute Engine</a> features.</p> 
+  exolve-postscript:
+  exolve-id: compute-1
+  exolve-title: <a href="../">Home</a> | Google Compute Engine Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Romin Irani : <a target="_blank" href="https://www.twitter.com/iRomin">Twitter</a> | <a target="_blank" href="https://www.linkedin.com/in/iromin/">Linkedin</a> | <a target="_blank" href="https://iromin.medium.com/">Blog</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  22
+  exolve-height: 18
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    ...B..............S...
+    ...O........C.....N...
+    ...O.......ZONE...A...
+    SPOT........N.....P...
+    ...D........F.....SSD.
+    ..LIVEMIGRATION.S.H...
+    ...S........D...T.O...
+    ...K.....SOLETENANT...
+    .........H..N...R.....
+    .........I..T...T.....
+    .........E..I...U.M...
+    .........L..A...P.I...
+    .......CUD..L.OPSAGENT
+    .....GPU.E......C.....
+    .......SUD......REGION
+    .......T........I.....
+    .....BYOL.......P.....
+    .......M........T.....
+  exolve-across:
+    4.	A deployment area for Google Cloud resources within a region. <a target="_blank" href="https://cloud.google.com/compute/docs/regions-zones?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (4)
+    5.	I am an affordable compute instance suitable for batch and fault-tolerant workloads. <a target="_blank" href="https://cloud.google.com/spot-vms?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (4)
+    6.	I am a high performance persistent disk. <a target="_blank" href="https://cloud.google.com/compute/docs/disks/performance#type_comparison?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(3)
+    7.	A technology to keep your virtual machine instances running even when a host system event, such as a software or hardware update, occurs. <a target="_blank" href="https://cloud.google.com/compute/docs/instances/live-migration?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (4,9)
+    9.	I am dedicated to hosting only your project's VMs. <a target="_blank" href="https://cloud.google.com/compute/docs/nodes/sole-tenant-nodes?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (4,6)
+    11.	A discount in return for committing to paying for Compute Engine resources for 1 year or 3 years. <a target="_blank" href="https://cloud.google.com/compute/docs/instances/signing-up-committed-use-discounts?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(3)
+    12.	I collect telemetry from Compute Engine instances. <a target="_blank" href="https://cloud.google.com/stackdriver/docs/solutions/agents/ops-agent?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (3,5)
+    13.	I can speed up compute jobs. <a target="_blank" href="https://cloud.google.com/gpu?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(3)
+    14.	An automatic discount for running specific Compute Engine resources a significant portion of the billing month. <a target="_blank" href="https://cloud.google.com/compute/docs/sustained-use-discounts?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(3)
+    15.	A specific geographical location where you can host your resources. <a target="_blank" href="https://cloud.google.com/compute/docs/regions-zones?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6)
+    16.	A licensing model that lets companies use their licenses flexibly, whether on-premise, or in the cloud. <a target="_blank" href="https://cloud.google.com/compute/docs/nodes/bringing-your-own-licenses?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(4)
+
+  exolve-down:
+    1.	I am a type of storage created automatically when you create a Compute Engine instance. <a target="_blank" href="https://cloud.google.com/compute/docs/disks/create-root-persistent-disks?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (4,4)
+    2.	I will need to be created to periodically back up data from your zonal persistent disks or regional persistent disks. <a target="_blank" href="https://cloud.google.com/compute/docs/disks/snapshots?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    3.	I am a Compute Engine VM running on hosts based on the second generation of AMD Epyc processors and have built-in optimization of both performance and security for enterprise-class high memory workloads. <a target="_blank" href="https://cloud.google.com/compute/confidential-vm/docs/about-cvm?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (12)
+    8.	I run when a virtual machine (VM) instance boots. <a target="_blank" href="https://cloud.google.com/compute/docs/instances/startup-scripts?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7,6)
+    9.	I am a type of VM that helps to protect enterprise workloads from threats like remote attacks, privilege escalation, and malicious insiders. <a target="_blank" href="https://cloud.google.com/shielded-vm?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    10.	A collection of virtual machine (VM) instances that you can manage as a single entity. Acronym <a target="_blank" href="https://cloud.google.com/compute/docs/instance-groups?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (3)
+    11.	I am Machine type that allows you to optimally choose a CPU and Memory configuration of your choice and not be limited to standard configurations. <a target="_blank" href="https://cloud.google.com/custom-machine-types?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6)
+
+exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

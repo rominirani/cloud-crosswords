@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>GCP Security 1</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on key GCP Security Services. Check out the <a href="https://cloud.google.com/security/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Google Cloud Security Home Page<a/>.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: security-1
+  exolve-title: <a href="../">Home</a> | Google Cloud Security Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Grace Mollison : <a target="_blank" href="https://www.twitter.com/grapesfrog">Twitter</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  21
+  exolve-height: 29
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    .......ENCRYPTION....
+    ............S........
+    ..DEFENCEINDEPTH.....
+    .........A..U........
+    .........P..D........
+    ............O........
+    .....CONFIDENTIAL.....
+    ............Y........
+    ..S.........M........
+    PACKETMIRRORING......
+    ..C.........Z........
+    ............A......C.
+    ....ZEROTRUST..S...L.
+    ............I..E...O.
+    ............O..C...U.
+    ...B.RECOMMENDER...D.
+    ...I...H.......E...A.
+    ...N.FIREWALL..T...R.
+    ..IAM..O.....EKM...M.
+    ...R...N.......A...O.
+    ...Y...I...BEYONDCORP
+    ...A...C.......A.L...
+    ..AUDITLOGS.A..G.O...
+    ...T...E....S..E.U...
+    ...H........SHARED...
+    ............U....D...
+    ............R....L...
+    ............E....P...
+    ............D........
+  exolve-across:
+    1.	You can find me at rest or on the move (in-transit). <a  target="_blank" href="https://cloud.google.com/security/encryption-in-transit?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref1</a> and <a target="_blank" href="https://cloud.google.com/security/encryption/default-encryption?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref2</a> (10)
+    3.	Apply multiple layers of security. (7,2,5)
+    5.	Needs to be kept secret. <a  target="_blank" href="https://cloud.google.com/confidential-computing?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (12)
+    7.	I copy traffic for you to safely inspect. <a  target="_blank" href="https://cloud.google.com/vpc/docs/packet-mirroring?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6,9)
+    9.	Trust no one. <a  target="_blank" href="https://cloud.google.com/beyondcorp-enterprise?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (4,5)
+    12.	I can tell you when you need to reduce permissions. <a  target="_blank" href="https://cloud.google.com/policy-intelligence?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (11)
+    14.	Use me to prevent unwanted traffic reaching your VMs. <a  target="_blank" href="https://cloud.google.com/vpc/docs/firewalls?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    15.	Using me allows you to implment the principle of least privilege. Acronym <a  target="_blank" href="https://cloud.google.com/iam/docs/overview?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (3)
+    16.	Use me to manage keys outside of Google Cloud. Acronym <a  target="_blank" href="https://cloud.google.com/security-key-management?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#section-6">Ref</a> (3)
+    17.	Enterprise way to adopt a Zero trust approach. <a  target="_blank" href="https://cloud.google.com/beyondcorp-enterprise?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6,4)
+    19.	If you look at me you can find out "who did what, where, and when". <a  target="_blank" href="https://cloud.google.com/logging/docs/audit?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (5,4)
+    21.	You're not alone and this approach helps reduce risk and cost. <a  target="_blank" href="https://cloud.google.com/blog/products/identity-security/delivering-the-industrys-most-trusted-cloud?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6)
+  exolve-down:
+    2.	De-identification technique. <a  target="_blank" href="https://cloud.google.com/dlp/docs/pseudonymization?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a>  (16)
+    4.	If you use me you do not need a VPN. <a  target="_blank" href="https://cloud.google.com/iap?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(3)
+    6.	I provide insights into your security posture. <a  target="_blank" href="https://cloud.google.com/security-command-center?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(3)
+    8.	Use me to mitigate OWASP top 10 risks. <a  target="_blank" href="https://cloud.google.com/armor?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (5,5)
+    10.	Use me to Store API keys, passwords, certificates, and other sensitive data. <a  target="_blank" href="https://cloud.google.com/secret-manager?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6,7)
+    11.	Do you trust that container image? <a  target="_blank" href="https://cloud.google.com/binary-authorization?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6,4)
+    13.	I am Google's Security Analytics Platform and I help you continually analyse your security telemetry data. <a  target="_blank" href="https://chronicle.security/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    18.	Use me to classify your data. <a  target="_blank" href="https://cloud.google.com/dlp?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref1</a> and <a  target="_blank" href="https://cloud.google.com/dlp?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#section-8">Ref2</a> (5,3)
+    20.	If you want to confidently meet your compliance & sovereign requirements, this is the workload you should be looking at. <a  target="_blank" href="https://cloud.google.com/assured-workloads?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

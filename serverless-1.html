@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Google Cloud Serverless Computing</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on Google Cloud Serverless Computing products.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: serverless-1
+  exolve-title: <a href="../">Home</a> | Google Cloud Serverless Computing Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Dharmesh Vaya : <a target="_blank" href="https://twitter.com/DRVaya">Twitter</a> | <a target="_blank" href="https://linkedin.com/in/dharmeshvaya">Linkedin</a> | <a target="_blank" href="https://drvaya.medium.com/">Blog</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  22
+  exolve-height: 20
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    .E....................
+    .P....................
+    .H.........W..EVENTARC
+    .E.........O.A....R...
+    .M.........RUNTIMEID..
+    .E.........K.T....G...
+    .R.........F.H..EIGHTY
+    .A.........L.O....E...
+    CLOUDFUNCTIONS....R...
+    ..N........W..........
+    ..E...EVENTS..........
+    ........N.............
+    ....CLOUDRUN..S.......
+    ........P.....T.......
+    .CONNECTORS...A.......
+    ........I.....N.......
+    ..CONTAINERIZED.......
+    ........T.....A.......
+    ..............R.......
+    ..............D.......
+  exolve-across:
+    3.	A fully-managed service deliver events from Google services, SaaS, and your own apps using loosely coupled services that react to state changes. <a target="_blank" href="https://cloud.google.com/eventarc/docs?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    6.	You will need the _______ value i.e. the language+version to deploy Cloud functions from command line or Terraform. <a target="_blank" href="https://cloud.google.com/functions/docs/concepts/exec?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    7.	As a Cloud Run container instance, by default I can receive a maximum of these many requests at the same time.  (Numeric) <a target="_blank" href="https://cloud.google.com/run/docs/about-concurrency?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6)
+    8.	I am a popular serverless product that allows you to write single-purpose actions, attached to events. <a target="_blank" href="https://cloud.google.com/functions/docs/concepts/overview?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (14)
+    10.	Things that happen within your cloud environment that you might want to take action on are called ________. <a target="_blank" href="https://cloud.google.com/functions/docs/concepts/events-triggers?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> ( 6)
+    12.	This serverless product offers you to specify traffic percentage received by a revision. <a target="_blank" href="https://cloud.google.com/run/docs/rollouts-rollbacks-traffic-migration?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    14.	I can help you access other Google Cloud Products within Cloud Workflows. <a target="_blank" href="https://cloud.google.com/workflows/docs/reference/googleapis?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (10)
+    15.	If your app is ____________ then it is a good fit for using Cloud Run. <a target="_blank" href="https://cloud.google.com/run/docs/fit-for-run?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (13)
+  exolve-down:
+    1.	This type of App Engine environments have a ___________ disk initialized on each VM startup. <a target="_blank" href="https://cloud.google.com/appengine/docs/the-appengine-environments?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    2.	I am a Google Cloud service that allows you to execute services in a defined order. <a target="_blank" href="https://cloud.google.com/workflows/docs?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    4.	When an Event occurs, I am the one that helps you create a response to it. <a target="_blank" href="https://cloud.google.com/functions/docs/concepts/events-triggers?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+    5.	(In greek) I mean flower - Pushpa - but I am a Fire power; by providing a flexible serverless development platform for hybrid and multicloud environments with Cloud Run. <a target="_blank" href="https://cloud.google.com/anthos/run?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6)
+    9.	If you set the concurrency to this value, it would negatively affect the scaling performance of Cloud Run. <a target="_blank" href="https://cloud.google.com/run/docs/about-concurrency?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (3)
+    11.	I give a unique reference to each Cloud Run service that is exposed. <a target="_blank" href="https://cloud.google.com/run/docs/resource-model?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    13.	This type of App Engine environment runs in a sandbox of the supported language and can scale to zero. <a target="_blank" href="https://cloud.google.com/appengine/docs/the-appengine-environments?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)  
+  exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

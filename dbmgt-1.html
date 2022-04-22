@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Google Cloud Database Management</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword checks your knowledge in Google Cloud Database Systems and Management Services.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: dbmgt-1
+  exolve-title: <a href="../">Home</a> | Google Cloud Database Management and Replication
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Pritam Sahoo : <a target="_blank" href="https://twitter.com/pritamsahoo">Twitter</a> | <a target="_blank" href="https://www.linkedin.com/in/pritam-sahoo-77a438a/">Linkedin</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  19
+  exolve-height: 20
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    ........F..........
+    ....REPLICA........
+    ........R..........
+    .BIGTABLE..........
+    ........SYNCHRONOUS
+    ......M.T..........
+    ......U.O..........
+    ......L.R..........
+    .DATASTREAM........
+    ......I......S.....
+    ...D..R......PAXOS.
+    ...O..E......A.....
+    ...C..G..D.C.N.....
+    ...U..I..M.L.N.....
+    C..MEMORYSTORE.....
+    M..E..N....U.R.....
+    EVENTUAL...D.......
+    K..T..L..BMS.......
+    ...........Q.......
+    ...........L.......
+  exolve-across:
+    2.	Copy of primary CloudSQL instance to offload read requests. <a target="_blank" href="https://cloud.google.com/sql/docs/mysql/replication/create-replica?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+    3.	Full managed sparsely populated table that can scale to billions of rows and thousands of columns. <a target="_blank" href="https://cloud.google.com/bigtable/docs/overview?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    4.	Replication mechanism provided by CloudSQL for high availability. <a target="_blank" href="https://cloud.google.com/sql/docs/mysql/high-availability?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (11)
+    6.	Serverless CDC and Replication Service to sync data across heterogenous databases, storage systems, etc. <a target="_blank" href="https://cloud.google.com/datastream?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (10)
+    9.	Replication Mechanism used by Spanner. <a target="_blank" href="https://cloud.google.com/spanner/docs/replication#overview_of_replication_in_cloud_spanner?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (5)
+    13.	In memory service offered on Google cloud compatible with open source Redis and Memcached. <a target="_blank" href="https://cloud.google.com/memorystore?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (11)
+    14.	Default consistency model offered by BigTable. <a target="_blank" href="https://cloud.google.com/bigtable/docs/replication-overview#consistency-model?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    15.	You can use me to Lift and Shift Oracle workloads to Google Cloud. <a target="_blank" href="https://cloud.google.com/bare-metal?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(3)
+  exolve-down:
+    1.	Serverless NoSQL database service with built-in live synchronization and offline mode. <a target="_blank" href="https://cloud.google.com/firestore?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    5.	Spanner instance type that delivers industry-leading 99.999% availability. <a target="_blank" href="https://cloud.google.com/spanner/docs/instance-configurations?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (13)
+    7.	Fully managed relational database with unlimited scale,distributed and global availability. <a target="_blank" href="https://cloud.google.com/spanner?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+    8.	Data Model supported by Firestore. <a target="_blank" href="https://cloud.google.com/firestore/docs/data-model?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    10.	I am a service and I simplify migrations to CloudSQL from on-premise, Compute Engine and other clouds. <a target="_blank" href="https://cloud.google.com/database-migration?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(3)
+    11.	Fully managed realtional database service for MySQL/PostgreSQL/SQL Server on Google cloud. <a target="_blank" href="https://cloud.google.com/sql?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    12.	Encryption mechanism offered by CloudSQL intended for organization that have sensitive or regulated data that requires them to manage their own encryption keys. <a target="_blank" href="https://cloud.google.com/sql/docs/mysql/configure-cmek?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(4)
+exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

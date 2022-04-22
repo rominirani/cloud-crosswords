@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>SRE DevOps 1</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on key DevOps and Site Reliability Engineering terms. Google has made several SRE books available for everyone. Check them out <a href="https://sre.google/books/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">here</a>.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: sre-devops-1
+  exolve-title: <a href="../">Home</a> | SRE DevOps Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Romin Irani : <a target="_blank" href="https://www.twitter.com/iRomin">Twitter</a> | <a target="_blank" href="https://www.linkedin.com/in/iromin/">Linkedin</a> | <a target="_blank" href="https://iromin.medium.com/">Blog</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  20
+  exolve-height: 17
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    .ERRORBUDGET........
+    .......P....S.C.....
+    INCIDENTCOMMANDER...
+    .......I....T....W..
+    ..SLO..MTTR.U....H..
+    ..L....E...PROFILING
+    .SIMPLICITY.A....T..
+    .......H....T..ALERT
+    .BLAMELESS.LIVE..B..
+    ..A....C....O...TOIL
+    GIT....K.SIGNAL..X..
+    ..E......L..........
+    ..N....TRAFFIC......
+    ..CI...R............
+    ..Y.DORA............
+    .......C............
+    ....HOPE............
+
+  exolve-across:
+    1 The amount of error that your service can accumulate over a certain period of time before your users start being unhappy. <a  target="_blank" href="https://sre.google/sre-book/embracing-risk/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref1</a> and <a  target="_blank" href="https://cloud.google.com/blog/products/management-tools/sre-error-budgets-and-maintenance-windows?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref2</a> (5,6)
+    5 I am a key SRE role and I hold the high-level state about the incident. <a target="_blank" href="https://sre.google/workbook/incident-response/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8,9)
+    7 A precise numerical target for system availability for our service. <a target="_blank" href="https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-sli-vs-slo-vs-sla?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (Acronym) (3)        
+    8 Average time taken to recover from a failure. <a  target="_blank" href="https://sre.google/sre-book/testing-reliability/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-"></a> (Acronym) (4) 
+    9 Need to check into the performance of CPU or memory-intensive functions executed across an application? I can help you with that. (9)
+    10 Djikstra says that you can't have reliability without it. (10)
+    11 I am intended to be read by a human but arrive via an Email, SMS, Slack or some other notification channel. <a  target="_blank" href="https://sre.google/workbook/alerting-on-slos/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (5)
+    12 I am a Postmortem and my most important characteristic is ? <a  target="_blank" href="https://sre.google/sre-book/postmortem-culture/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=->Ref</a> (9)
+    14 SRE has found that roughly 70% of outages are due to changes in a _____ system. (4)
+    15 I am a task that is repetitive, manual and of no enduring value. Please give me a break and automate me. <a  target="_blank" href="https://sre.google/sre-book/eliminating-toil/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref1</a> and <a target="_blank" href="https://cloud.google.com/blog/products/management-tools/identifying-and-tracking-toil-using-sre-principles?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref2</a> (4)
+    16 I am a version control system. (3)
+    17 Effective Alerting systems have a high amount of me and low amount of noise. (6)
+    18 I am one of the Golden Signals of Monitoring and I can tell you how much demand is being put on your system. <a  target="_blank" href="https://sre.google/sre-book/monitoring-distributed-systems/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+    19 A development practice where code is regularly checked in, and each check-in triggers a set of quick tests to discover regressions, which developers fix immediately. (Acronym) (2)
+    20 A 7+ year program that provides independent view into the practices and capabilities that drive high performance in technology delivery and ultimately organizational outcomes. <a  target="_blank" href="https://www.devops-research.com/research.html?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (Acronym) (4)
+    21 A Traditional SRE saying "_____ is not a strategy". (4)
+
+  exolve-down:
+    2 I am a request that is sent to a publicly accessible IP address on a resource to see whether it responds. <a  target="_blank" href="https://cloud.google.com/monitoring/uptime-checks?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6,5)
+    3 I am one of the Golden Signals of Monitoring and I can tell you how full your service is. <a  target="_blank" href="https://sre.google/sre-book/monitoring-distributed-systems/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (10)
+    4 A process that allows organizations the ability to release changes of all kinds on demand quickly, safely, and sustainably. (Acronym) (2)
+    6 This method of monitoring requires you to inspect the workings of the system with deep instrumentation. <a target="_blank" href="https://cloud.google.com/architecture/devops/devops-measurement-monitoring-and-observability?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    7 A direct measurement of a services behavior. <a target="_blank" href="https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-sli-vs-slo-vs-sla?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (Acronym) (3)
+    13 I am one of the Golden Signals of Monitoring and I can tell you the time it takes to service a request. <a  target="_blank" href="https://sre.google/sre-book/monitoring-distributed-systems/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+    17 I contain the contracts and if you don't meet them, there could be penalties. <a target="_blank" href="https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-sli-vs-slo-vs-sla?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (Acronym) (3)
+    18 If you want to check on latency issues across multiple microservices, you might employ me. (5)
+
+exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Cloud Native Concepts Crossword</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on key Cloud Native concepts as listed in the <a href="https://glossary.cncf.io/" target="_blank">CNCF Glossary</a>. </p>
+  exolve-postscript:
+  exolve-id: cncf-1
+  exolve-title: <a href="../">Home</a> | Cloud Native Computing Foundation (CNCF) Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Romin Irani : <a target="_blank" href="https://www.twitter.com/iRomin">Twitter</a> | <a target="_blank" href="https://www.linkedin.com/in/iromin/">Linkedin</a> | <a target="_blank" href="https://iromin.medium.com/">Blog</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  24
+  exolve-height: 16
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    ......BLUEGREEN.........
+    ...........E............
+    .....SERVERLESS.........
+    ...........I..R........C
+    ...........A.SELF......L
+    ...........B.E.....A...U
+    .......IAC.I.R.....U.Z.S
+    .......M.H.L.V.SHIFTLEFT
+    .......M.API.I.....O.R.E
+    .......U.O.T.CD..TLS.O.R
+    KUBERNETES.Y.E.....C....
+    .......A.....M.....A....
+    .......B..OBSERVABILITY.
+    .......L.....S.....I....
+    .......E.....HORIZONTAL.
+    ...................G....
+  exolve-across:
+    1.	I am a strategy for updating running computer systems with minimal downtime. (4,5)
+    3.	A cloud native development model that allows developers to build and run applications without having to manage servers. (10)
+    6.	_____ Healing : A characteristic of a system capable of recovering from certain types of failure without any human intervention. (4)
+    8.	The practice of storing the definition of infrastructure as one or more files. Acronym(3)
+    11.	The practice of implementing tests, security, or other development practices early in the software development lifecycle rather than towards the end. (5,4)
+    12.	A way for computer programs to interact with each other. Acronym(3)
+    13.	A set of practices in which code changes are automatically deployed into an acceptance environment. Acronym(2).
+    14.	I am a protocol designed to provide increased security to communication over a network. It ensures the secure delivery of data sent over the Internet, avoiding possible monitoring and/or alteration of the data. Acronym(3)
+    15.	A data center operating system that manages applications running across a distributed system. (10)
+    16.	The characteristic of an application that refers to how well a system’s state or status can be understood from its external outputs. (13)
+    17.	_____ Scaling: a technique where a system’s capacity is increased by adding more nodes versus adding more compute resources to individual nodes. (10)
+  exolve-down:
+    2.	I define how well a system responds to failures. (11)
+    4.	A discipline that combines operations and software engineering. Acronym(3)
+    5.	A group of computers or applications that work together towards a common goal. (7)
+    6.	In a microservices world, I manage traffic (i.e., communication) between services and add reliability, observability, and security features uniformly across all services. (7,4)
+    7.	The ability of the system to add or reduce resources based on fluctuating user demands. (11)
+    8.	I am a characteristic of Infrastructure that cannot be changed once deployed. (9)
+    9.	_____ Engineering : The discipline of experimenting on a distributed system in production to build confidence in the system’s capability to withstand turbulent and unexpected conditions. (5)
+    10.	_____ Trust: An approach to the design and implementation of IT systems where trust is completely removed. (4)
+exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

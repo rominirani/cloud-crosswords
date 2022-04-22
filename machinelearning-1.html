@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Machine Learning</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on key Machine Learning terms. You can find a glossary of several terms <a href="https://developers.google.com/machine-learning/glossary" target="_blank">here</a>.</p>
+  exolve-postscript:
+  exolve-id: machinelearning-1
+  exolve-title: <a href="../">Home</a> | Machine Learning Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Romin Irani : <a target="_blank" href="https://www.twitter.com/iRomin">Twitter</a> | <a target="_blank" href="https://www.linkedin.com/in/iromin/">Linkedin</a> | <a target="_blank" href="https://iromin.medium.com/">Blog</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  21
+  exolve-height: 19
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    ................P...L
+    .............LAYER..A
+    .......C.....O..R...B
+    ......MODEL..S..C...E
+    .......N.....S.RECALL
+    .......F......R.P....
+    .....R.I.M....E.T....
+    ....NEURON..ACCURACY.
+    ...O.G.M.I.E..O.O....
+    ...V.R.A.SENTIMENT...
+    .E.E.E.T.T.C..M......
+    .N.R.S.I...O.WEIGHT..
+    .S.F.S.O...D..N......
+    DECISIONTREE..D......
+    .M.T.O.....R..A......
+    .B.T.N........T......
+    .L.I....CONFUSION....
+    .E.N..........O......
+    ...G..PRECISION......    
+  exolve-across:
+    3.	A set of neurons in a neural network that process a set of input features, or the output of those neurons. (5)
+    5.	The representation of what a machine learning system has learned from the training data. (5)
+    6.	A metric for classification models that answers what proportion of actual positives was identified correctly? (6)
+    10.	A node in a neural network, typically taking in multiple input values and generating one output value. (6)
+    11.	The fraction of predictions that a classification model got right. (8)
+    14.	_____ Analysis: Using statistical or machine learning algorithms to determine a group's overall attitude—positive or negative—toward a service, product, organization, or topic. (9)
+    16.	A coefficient for a feature in a linear model, or an edge in a deep network. (6)
+    17.	A supervised learning model composed of a set of conditions and leaves organized hierarchically. (8,4)
+    18.	______ matrix : A NxN table that aggregates a classification model's correct and incorrect guesses. (9)
+    19.	A metric for classification models that answers what proportion of positive identifications was actually correct? (9)
+  exolve-down:
+    1.	A system (either hardware or software) that takes in one or more input values, runs a function on the weighted sum of the inputs, and computes a single output value. (10)
+    2.	In supervised learning, the "answer" or "result" portion of an example. (5)
+    3.	A measure of how far a model's predictions are from its label. (4)
+    4.	A type of bias that indicates a tendency to search for, interpret, favor, and recall information in a way that confirms one's preexisting beliefs or hypotheses. (12)
+    7.	______ system : A system that selects for each user a relatively small set of desirable items from a large corpus. (14)
+    8.	A type of model that outputs continuous (typically, floating-point) values. (10)
+    9.	A public-domain dataset compiled by LeCun, Cortes, and Burges containing 60,000 images, each image showing how a human manually wrote a particular digit from 0–9. Acronym (5)
+    12.	Creating a model that matches the training data so closely that the model fails to make correct predictions on new data. (11)
+    13.	In general, any ML system that converts from a raw, sparse, or external representation into a more processed, denser, or more internal representation. (7)
+    15.	A collection of models trained independently whose predictions are averaged or aggregated. (8)
+exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

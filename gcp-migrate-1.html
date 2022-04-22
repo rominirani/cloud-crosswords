@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Migrate to Google Cloud</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on migrating your workloads to Google Cloud. Check out the <a target="_blank" href="https://cloud.google.com/architecture/migration-to-gcp-getting-started?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Migration</a> page for more details.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: gcp-migrate-1
+  exolve-title: <a href="../">Home</a> | Migrate to Google Cloud Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Marco Ferrari : <a target="_blank" href="https://twitter.com/ferrarimarco">Twitter</a> | <a target="_blank" href="https://www.linkedin.com/in/ferrarimark/">Linkedin</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  23
+  exolve-height: 20
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    ....Q..................
+    ....U........L...IAM..F
+    ....ORGANIZATION..N...O
+    ....T........F....T...L
+    ....A...P....T....H...D
+    ........R....STRATOZONE
+    ........O....H....S...R
+    P.......J....I.........
+    U..P....E....F.........
+    BILLINGACCOUNT.........
+    L..A....T..............
+    IDENTITY.......A.......
+    C....N.........S.......
+    C....V.........S.......
+    L....E..COMPUTEENGINE..
+    O....N.........S.......
+    U..SETUPCHECKLIST......
+    D....O.................
+    ..IMPROVEMOVE..........
+    .....Y.................
+
+  exolve-across:
+    3.	This Google Cloud service lets you grant granular access to resources. <a target="_blank" href="https://cloud.google.com/iam?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym (3)
+    6.	The apex of the Google Cloud resource hierarchy. <a target="_blank" href="https://cloud.google.com/architecture/migration-to-google-cloud-building-your-foundation?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#understand_google_cloud_resources">Ref</a> (12)
+    8.	Google Cloud service that provides a data-driven framework to migrate your IT infrastructure to Google Cloud. <a target="_blank" href="https://cloud.google.com/migrate/stratozone/docs/about-stratozone?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (10)
+    11.	This Google Cloud resource helps you track all the costs for your resource consumption. <a target="_blank" href="https://cloud.google.com/billing/docs/concepts?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#billing_account">Ref</a> (7,7)
+    12.	Cloud _____ : This Google Cloud service helps you migrate and manage your identities. <a target="_blank" href="https://cloud.google.com/identity?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    15.	Migrate for _______: This Google Cloud service helps you miigrate your VMs with minor, automatic modifications. <a target="_blank" href="https://cloud.google.com/migrate/compute-engine?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7,6)
+    16.	Enterprises should use this to ensure everything is ready. <a target="_blank" href="https://cloud.google.com/docs/enterprise/setup-checklist?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (5,9)
+    17.	____ and _____: In this type of migration, you modernize the workload while migrating it. <a target="_blank" href="https://cloud.google.com/architecture/migration-to-gcp-getting-started?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#types_of_migrations">Ref</a> (7,4)
+
+  exolve-down:
+    1.	It limits resource usage on a per-project basis. <a target="_blank" href="https://cloud.google.com/docs/quota?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (5)
+    2.	____ and _____: In this type of migration, you move workloads from a source environment to a target environment with minor or no modifications or refactoring. <a target="_blank" href="https://cloud.google.com/architecture/migration-to-gcp-getting-started?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#types_of_migrations">Ref</a> (4,5)
+    4.	Migrate for ______ : Google Cloud service that helps you migrate and modernize traditional applications. <a target="_blank" href="https://cloud.google.com/migrate/anthos?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6)
+    5.	It provides an additional grouping mechanism and isolation boundaries between projects. <a target="_blank" href="https://cloud.google.com/architecture/migration-to-google-cloud-building-your-foundation?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#understand_google_cloud_resources">Ref</a> (6)
+    7.	It contains Google Cloud resources. <a target="_blank" href="https://cloud.google.com/architecture/migration-to-google-cloud-building-your-foundation?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#understand_google_cloud_resources">Ref</a> (7)
+    9.	In this environment, you don't have to manage the whole resource stack by yourself. <a target="_blank" href="https://cloud.google.com/architecture/migration-to-gcp-getting-started?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#beginning_the_journey">Ref</a> (6,5)
+    10.	In this phase, you provision and configure the cloud infrastructure and services that will support your workloads on Google Cloud. <a target="_blank" href="https://cloud.google.com/architecture/migration-to-gcp-choosing-your-path?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#benefits_of_establishing_a_migration_framework">Ref</a> (4)
+    13.	List of assets involved in a migration. <a target="_blank" href="https://cloud.google.com/architecture/migration-to-gcp-getting-started?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#take_inventory">Ref</a> (9)
+    14.	In this phase, you gather information about the workloads you want to migrate and their current runtime environment. <a target="_blank" href="https://cloud.google.com/architecture/migration-to-gcp-choosing-your-path?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#benefits_of_establishing_a_migration_framework">Ref</a> (6)
+exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

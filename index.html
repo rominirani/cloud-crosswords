@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cloud Crosswords</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="text-center">
+  <h1>Cloud Crosswords</h1>
+  <p>Test your knowledge of Cloud in multiple areas via crosswords and have some fun!</p> 
+  <p>Would you like to contribute a crossword ? If yes, please fill this <a href="https://forms.gle/5YKZFer5j1r12U88A">form</a>.</p>
+  <p><a href="about.html">About Cloud Crosswords</a> | <a href="https://forms.gle/fym9i9d28guFSRWp7">Report an Issue</a></p>
+</div>
+<div class="list-group">
+  <a href="machinelearning-1.html" class="list-group-item"><sup><b>New! </b></sup>Machine Learning</a>
+  <a href="anthos-1.html" class="list-group-item"><sup><b>New! </b></sup>Anthos</a>
+  <a href="kubernetes-1.html" class="list-group-item">Kubernetes</a>
+  <a href="gcp-networking-1.html" class="list-group-item">Google Cloud Networking</a>
+  <a href="cncf-1.html" class="list-group-item">Cloud Native Concepts - CNCF</a>
+  <a href="asm-1.html" class="list-group-item">Anthos Service Mesh</a>
+  <a href="gcp-migrate-1.html" class="list-group-item">Migrate to Google Cloud</a>
+  <a href="gke-security-1.html" class="list-group-item">GKE Security</a>
+  <a href="gcp-dlp-1.html" class="list-group-item">Google Cloud DLP</a>
+  <a href="serverless-1.html" class="list-group-item">Google Cloud Serverless</a>
+  <a href="resilience-1.html" class="list-group-item">Designing for Resilience</a>
+  <a href="analytics-1.html" class="list-group-item">Google Data Analytics</a>
+  <a href="sre-devops-1.html" class="list-group-item">SRE DevOps</a>
+  <a href="gcp-security-1.html" class="list-group-item">Google Cloud Security</a>
+  <a href="gcp-compute-engine-1.html" class="list-group-item">Google Compute Engine</a>
+  <a href="dbmgt-1.html" class="list-group-item">Google Cloud Database Management</a>
+  <a href="gcs-1.html" class="list-group-item">Google Cloud Storage</a>
+  <a href="dbmgt-2.html" class="list-group-item">Google Cloud Storage and Databases</a>
+</div>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

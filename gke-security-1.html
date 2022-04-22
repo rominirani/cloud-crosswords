@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Google Kubernetes Engine (GKE) Security</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/concepts/security-overview?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">GKE Security</a>.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: gke-security-1
+  exolve-title: <a href="../">Home</a> | GKE Security Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Ashish Goel : <a target="_blank" href="https://www.linkedin.com/in/ash-goel/">Linkedin</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  19
+  exolve-height: 23
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    ..............B....
+    ..............A....
+    ............TLS....
+    .......C......I....
+    .......O....SCC....
+    ....C..N.....L.....
+    ..N.OAUTH....U.....
+    ..E.N..A.COS.SSH...
+    ..T.F..I.L...T.....
+    ..W.I..N.I...E.....
+    ..O.GATEKEEPER...C.
+    ..R.M..R.N.......L.
+    ..KSA....T...M...U.
+    ..P.PODSECURITY..S.
+    ..O......O.B.L...T.
+    ..L......N.A.S...E.
+    PRIVATE..F.C..M..R.
+    ..C......I....O..R.
+    ..Y......GKESANDBOX
+    ..............T..L.
+    ..............H..E.
+    ..............L....
+    ..............Y....
+
+  exolve-across:
+    2.	I am a k8s secret type (and the name of an encryption protocol) to create a secret from the given public/private key pair. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/concepts/secret?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym (3)
+    4.	I am security and risk platform for Google Cloud that helps to prevent, detect, and respond to threats by gathering data, identifying threats, and recommending actions. <a target="_blank" href="https://cloud.google.com/architecture/security-controls-and-forensic-analysis-for-GKE-apps?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#cloud_security_command_center">Ref</a> Acronym (3)
+    8.	This is the authentication type that is recommended for cluster authentication and is automatically configured for you. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/api-server-authentication?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym (5)
+    9.	By default, GKE nodes, which runs Kubernetes and its components, use an OS from Google that implements several advanced features for enhancing the security of GKE clusters. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/concepts/security-overview?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym (3)
+    10.	Cluster with Autopilot mode does not allow to access nodes using this cryptographic protocol. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#no_ssh">Ref</a> (3)
+    11.	I am an Admission Controller to apply Pod-level security controls to GKE cluster using Open Policy Agent (OPA). <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/podsecurityadmission?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (4,6)
+    13.	I can be used to authenticate Pods to Google Cloud resources through Workload Identity, allowing Pods to act as an IAM service account. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/kubernetes-service-accounts?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym (3)
+    15.	I am a GKE admission controller, available in preview, that lets you setup high-level guardrails around Pods. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/podsecurityadmission?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (3,8)
+    17.	This type of GKE cluster ensure that cluster nodes do not get external IP address. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+    19.	When enabled, it protects the host kernel on your nodes when containers in the Pod execute unknown or untrusted code. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/concepts/sandbox-pods?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (3,7)
+  exolve-down:
+    1.	I am an User authentication method, to GKE, that is deprecated and has been removed in GKE 1.19 and later. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/api-server-authentication?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#disabling_authentication_with_a_static_password">Ref</a> (5)
+    3.	GKE deploys a per-node logging agent to collect these logs. <a target="_blank" href="https://cloud.google.com/architecture/security-controls-and-forensic-analysis-for-GKE-apps#gke_security?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    5.	Workload Identity must be enabled at this level before you can enable Workload Identity on node pools. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+    6.	I am one of the volume types that you would need to exclude from PodSecurity to restrict your Pods from writing to boot disks. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/custom-boot-disks?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#prevent-pod">Ref</a> (6,3)
+    7.	I am a GKE/k8s native control mechanism to restrict Pod to Pod communcation/traffic and also CIS GKE Benchmark Recommendation. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#gcloud">Ref</a> (7,6)
+    9.	I am a Kubernetes CRD that is used to configure GKE identity provider. It allows existing identity solutions for authentication into your GKE clusters. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/oidc?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6,6)
+    12.	I am a set of permissions that can be assigned to resources within a given cluster. (7,4)
+    14.	I am the cryptographic protocol that encrypts the communication between etcd servers to establish a quorum in a regional cluster. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/concepts/control-plane-security?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym (4)
+    16.	This is Kubernetes's built-in access control mechanism. It allows you to create fine-grained roles, which exist within the Kubernetes cluster. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym (4)
+    18.	This is the recommend frequency/schedule to upgrade GKE node in case you have disabled node auto-upgrade. <a target="_blank" href="https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)  
+  exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

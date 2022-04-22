@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Google Cloud Storage + Databases</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on Google Cloud Storage and Databases.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: dbmgt-2
+  exolve-title: <a href="../">Home</a> | Google Cloud Storage and Databases Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Shivnath Sharma : <a target="_blank" href="https://www.linkedin.com/in/shivnath-sharma/">Linkedin</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  23
+  exolve-height: 21
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    .................N.....
+    .................E.....
+    ..............DATASET..
+    .................R.....
+    .................L.....
+    .............P...I.....
+    ...........B.I...N.....
+    ..........BIGTABLE.....
+    ...........G.R.........
+    .....CLOUDSQL...F......
+    ...........U....I......
+    ..ARTIFACTREGISTRY.....
+    ......I....R....E......
+    ..LOCALSSD.Y....S......
+    ....O.E.........T......
+    MYSQL.SEVEN....COLOSSUS
+    ....U.T.........R......
+    ....M.O.......CMEK.....
+    SPANNER................
+    .D..A.E................
+    ....R..................
+  exolve-across:
+    2.	It is a logical container that is used to organize and control access to your BigQuery resources. <a target="_blank" href="https://cloud.google.com/bigquery/docs/resource-hierarchy?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#datasets">Ref</a> (7)
+    5.	The database that powers many core Google services, including Search, Analytics, Maps, and Gmail. <a target="_blank" href="https://cloud.google.com/bigtable/docs?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#docs">Ref</a> (8)
+    6.	I am cloud-based alternative to local MySQL, PostgreSQL, and SQL Server databases. <a target="_blank" href="https://cloud.google.com/sql?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    8.	The next generation of Container Registry. Store, manage, and secure your build artifacts. <a target="_blank" href="https://cloud.google.com/artifact-registry?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8,8)
+    10.	I am an ephemeral locally attached block storage for virtual machines and containers. <a target="_blank" href="https://cloud.google.com/local-ssd?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    12.	Cloud SQL for…... has a limit of 10,000 tables for an instance. <a target="_blank" href="https://cloud.google.com/sql/docs/quotas?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#fixed-limits">Ref</a> (5)
+    13.	By default, for each instance, Cloud SQL retains how many automated backups. <a target="_blank" href="https://cloud.google.com/sql/docs/mysql/backup-recovery/backups?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (5)
+    14.	When you use Bigtable, your data is stored on, Google's internal, highly durable file system, using storage devices in Google's data centers, which is known as ______. <a target="_blank" href="https://cloud.google.com/bigtable/docs/overview?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#durability">Ref</a> (8)
+    15.	In Bigtable, if you have specific compliance or regulatory requirements related to the keys that protect your data, you can use this type of keys. <a target="_blank" href="https://cloud.google.com/bigtable/docs/cmek?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(4)
+    16.	I am fully managed relational database with unlimited scale, strong consistency, and up to 99.999% availability. <a target="_blank" href="https://cloud.google.com/spanner?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+  exolve-down:
+    1.	A storage class which is low-cost, highly durable storage service for storing infrequently accessed data. It is ideal for data you plan to read or modify on average once per month or less. <a target="_blank" href="https://cloud.google.com/storage/docs/storage-classes?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#nearline">Ref</a> (8)
+    3.	Cloud Spanner ______ provides protection against accidental deletion or writes. <a target="_blank" href="https://cloud.google.com/spanner/docs/pitr?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(4)
+    4.	I manage and analyze your data with built-in features like machine learning, geospatial analysis, and business intelligence. <a target="_blank" href="https://cloud.google.com/bigquery/docs/introduction?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    7.	I am a flexible, scalable database for mobile, web, and server development. <a target="_blank" href="https://firebase.google.com/docs/firestore?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    9.	I am Fully managed service for file migration and storage. Easily mount file shares on Compute Engine VMs. <a target="_blank" href="https://cloud.google.com/filestore?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    11.	BigQuery uses this storage that supports semistructured data, nested and repeated fields. <a target="_blank" href="https://cloud.google.com/bigquery/docs/introduction?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#bigquery-storage">Ref</a> (8)
+    17.	I am Reliable, high-performance block storage for virtual machine instances. <a target="_blank" href="https://cloud.google.com/persistent-disk?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(2)
+  exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

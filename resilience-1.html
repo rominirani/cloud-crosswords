@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Designing for Resilience</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on designing cloud systems that are resilient. Check out a page that discusses <a target="_blank" href="https://cloud.google.com/architecture/scalable-and-resilient-apps">Patterns for scalable and resilient apps</a>.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: resilience-1
+  exolve-title: <a href="../">Home</a> | Designing for Resilience Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Grace Mollison : <a target="_blank" href="https://www.twitter.com/grapesfrog">Twitter</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  24
+  exolve-height: 19
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    ............D...........
+    ....SCALABILITY.........
+    ........R...S...........
+    .......GCS..AVAILABILITY
+    ..A.....H...S...........
+    .PUBSUB.IMMUTABLE.......
+    ..T.....V.O.E...........
+    ..O..ZONE.N.REPLICATION.
+    ..S......MIG............
+    ..CLB..R..T.............
+    ..A...REGION............
+    ..L....G..R.............
+    ..I.S..I..I.............
+    .SNAPSHOT.N.............
+    ..G.A..N..G.............
+    ....N..A................
+    HAVPN..L................
+    ....E..P................
+    ....R..D................
+  exolve-across:
+    2.	Adjust capacity to meet demand. <a target="_blank" href="https://cloud.google.com/architecture/scalable-and-resilient-apps?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#scalability_adjusting_capacity_to_meet_demand">Ref</a> (11)
+    4.	A Storage Service to store your backup files. <a target="_blank" href="https://cloud.google.com/storage?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(3)
+    5.	Design this as high. (12)
+    7.	I am used to design loosely coupled architectures. (6)
+    8.	I cannot be modified after being deployed. <a target="_blank" href="https://cloud.google.com/architecture/scalable-and-resilient-apps?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#create_immutable_infrastructure">Ref</a> (9)
+    10.	I am a single failure domain. <a target="_blank" href="https://cloud.google.com/docs/geography-and-regions#regions_and_zones?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (4)
+    11.	Make a copy to improve availability. (11)
+    12.	Use me to automatically recreate an identical VM. <a target="_blank" href="https://cloud.google.com/compute/docs/instance-groups?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(3)
+    13.	I allow you to distribute your compute resources in single or multiple regions. <a target="_blank" href="https://cloud.google.com/load-balancing?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym(3)
+    15.	Independent geographic area that consist of zones. <a target="_blank" href="https://cloud.google.com/docs/geography-and-regions#regions_and_zones?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6)
+    17.	A point in time backup of a persistent disk. <a target="_blank" href="https://cloud.google.com/compute/docs/disks/snapshots?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    18.	Connect to your on premises network securely using this gateway with an SLA of 99.99%. <a target="_blank" href="https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#ha-vpn">Ref</a> Acronym(5)
+  exolve-down:
+    1.	You need to recover from this to show that you are resilient. (8)
+    3.	I am the best storage class to use for keeping your backups but you can still retrieve your data quickly. <a target="_blank" href="https://cloud.google.com/storage/docs/storage-classes?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#archive">Ref</a> (7)
+    6.	If you exceed a metric or meet a predefined condition I can do this /I'm useful on Black Friday. <a target="_blank" href="https://cloud.google.com/architecture/scalable-and-resilient-apps?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#configure_autoscaling">Ref</a> (11)
+    9.	Use me to look for anomalous behaviour. (10)
+    14.	Use me if you need synchronous replication of data between two zones in a region. <a target="_blank" href="https://cloud.google.com/compute/docs/disks/high-availability-regional-persistent-disk?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8,2)
+    16.	I am a globally distributed ACID compliant database. <a target="_blank" href="https://cloud.google.com/spanner?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+  exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

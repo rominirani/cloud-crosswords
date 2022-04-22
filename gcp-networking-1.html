@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>GCP Networking 1</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on key GCP Networking concepts/services.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: gcp-networking-1
+  exolve-title: <a href="../">Home</a> | Google Cloud Networking Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Grace Mollison : <a target="_blank" href="https://www.twitter.com/grapesfrog">Twitter</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  20
+  exolve-height: 20
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    ...C................
+    ...O................
+    ...L..S.............
+    ...O..U.............
+    ...C..B.L...VPCSC...
+    ..NAT.N.O....E......
+    ...T..E.A....E......
+    DEDICATED....R......
+    ...O....B....I......
+    ...N.V..A..G.N......
+    ....VPCFLOWLOGS.....
+    .....C..A..O........
+    ......CDN..B...R.N..
+    ........C..ANDROMEDA
+    HIERARCHICAL...U.G.R
+    ......U.N......T...M
+    ......S.G......E...O
+    ......T.........TIER
+    ..NETWORKTAG........
+    ......M.............
+  exolve-across:
+    4.	Use me to enforce a security perimeter to help prevent data exfiltration. <a target="_blank" href="https://cloud.google.com/vpc-service-controls?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym (5)
+    6.	Use me to allow your Instances that do not have public IP addresses to access the internet. <a target="_blank" href="https://cloud.google.com/nat?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym (3)
+    7.	I am a physical connection between your on-premises network and Google's network. <a target="_blank" href="https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    10.	Use me to give insights into your network traffic. <a target="_blank" href="https://cloud.google.com/vpc/docs/flow-logs?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (3,4,4)
+    11.	Use me to serve content closer to your users. Acronym <a target="_blank" href="https://cloud.google.com/cdn/docs/overview?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (3)
+    14.	I am Googles virtual network stack you may know me better as a galaxy. <a target="_blank" href="https://cloud.google.com/blog/products/networking/google-cloud-networking-in-depth-how-andromeda-2-2-enables-high-throughput-vms?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    16.	These firewall policies are applied at the organisation or folder level. <a target="_blank" href="https://cloud.google.com/vpc/docs/firewall-policies?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (12)
+    18. You choose one of these by considering the Cost performance trade off when designing your network. <a target="_blank" href="https://cloud.google.com/network-tiers?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (4)
+    19.	You can use me as a target for a firewall rule. <a target="_blank" href="https://cloud.google.com/vpc/docs/add-remove-network-tags?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7,3)  
+  exolve-down:
+    1.	I am a facility where a physical Interconnect connection is provisioned. <a target="_blank" href="https://cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (10)
+    2.	Use me to define a range of IPv4 addresses. <a target="_blank" href="https://cloud.google.com/vpc/docs/subnets?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6)
+    3.	Use me to distribute traffic across multiple instances. <a target="_blank" href="https://cloud.google.com/load-balancing/docs/load-balancing-overview?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (13)
+    5.	Use me to allow sharing of Internal IP addresss across two VPCs. <a target="_blank" href="https://cloud.google.com/vpc/docs/vpc-peering?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+    8.	I am your network on Google cloud.  <a target="_blank" href="https://cloud.google.com/vpc/docs/vpc?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym (3)
+    9.	A VPC network is a ____ resource. <a target="_blank" href="https://cloud.google.com/compute/docs/regions-zones/global-regional-zonal-resources?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#globalresources">Ref</a> (6)
+    12.	I define the path that network traffic takes from a virtual machine to other destinations. <a target="_blank" href="https://cloud.google.com/vpc/docs/routes?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (5)
+    13.	I am used to specify a group of backend endpoints or services. <a target="_blank" href="https://cloud.google.com/load-balancing/docs/negs?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acronym (3)
+    15.	Cloud _____ : Use me to help defend against DDOS attacks <a target="_blank" href="https://cloud.google.com/armor?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (5)
+    17.	In this mode no subnets are automatically created. <a target="_blank" href="https://cloud.google.com/vpc/docs/vpc?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#subnet-ranges">Ref</a> (6)
+exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

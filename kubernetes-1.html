@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Kubernetes Crossword</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on key Kubernetes concepts.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: kubernetes-1
+  exolve-title: <a href="../">Home</a> | Kubernetes Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Abhishek Sharma : <a target="_blank" href="https://www.twitter.com/Abhishek_7389">Twitter</a> | <a target="_blank" href="https://linkedin.com/in/abhisheksharma7389">Linkedin</a> | <a target="_blank" href="https://medium.com/@abhisheksharma7389">Blog</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  20
+  exolve-height: 21
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    .....D..............
+    CLUSTER.............
+    ...C.P..............
+    .P.H.L..............
+    NODE.O....C..C......
+    .D.D.Y..CONTROL.....
+    ...U.M..R.C..N......
+    ...L.ETCD.F..F......
+    ...E.N.O.....I......
+    SECRET.N.K.I.G......
+    .......T.U.NAMESPACE
+    ....R..A.B.G.A......
+    ....E..I.E.R.P...K..
+    ....P..N.L.E.....U..
+    ....LIVENESS.....B..
+    ....I..R.T.SERVICE..
+    ....C............P..
+    ..READINESS......R..
+    ....S............O..
+    .KUBECONFIG......X..
+    ....T............Y..
+  exolve-across:
+    2.	It consists of a set of worker machines, called nodes, that run containerized applications. <a target="_blank" href="https://kubernetes.io/docs/concepts/overview/components/">Ref</a> (7)
+    5.	I am a worker machine in kubernetes. <a target="_blank" href="https://kubernetes.io/docs/concepts/overview/components/">Ref</a> (4)
+    8.	______ Plane: The container orchestration layer that exposes the API & interfaces to define, deploy and manage the lifecycle of containers. <a target="_blank" href="https://kubernetes.io/docs/concepts/overview/components/">Ref</a>  (7)
+    9.	A Control Plane component, which is Consistent and highly-available key value store used as Kubernetes' backing store for all cluster data. <a target="_blank" href="https://kubernetes.io/docs/concepts/overview/components/">Ref</a> (4)
+    11.	A resource to store confidential data in key-value pairs. These are base64 encoded. <a target="_blank" href="https://kubernetes.io/docs/concepts/configuration/secret/">Ref</a> (6)
+    14.	A logical separation between multiple applications and associated resources. <a target="_blank" href="https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/">Ref</a> (9)
+    17.	This probe is used by kubelet to identify when to restart the container. <a target="_blank" href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/">Ref</a> (8)
+    18.	An abstract way to expose an application running on a set of Pods as a network service. <a target="_blank" href="https://kubernetes.io/docs/concepts/services-networking/service/">Ref</a> (7)
+    19.	This probe is used by kubelet to know when a container is ready to start accepting traffic. <a target="_blank" href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/">Ref</a> (9)
+    20.	I am the metadata file to organize information about clusters, users, namespaces, and authentication mechanisms. <a target="_blank" href="https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/">Ref</a> (10)  
+  exolve-down:
+    1.	_________ describes the desired state of the application to be deployed. <a target="_blank" href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/">Ref</a> (10)
+    3.	A Control Plane component that watches for newly created Pods with no assigned node, and selects a node for them to run on. <a target="_blank" href="https://kubernetes.io/docs/concepts/overview/components/">Ref</a> (9)
+    4.	I am the smallest deployable units of computing that you can create and manage in Kubernetes. <a target="_blank" href="https://kubernetes.io/docs/concepts/overview/components/">Ref</a> (3)
+    6.	_______ serves as the vendor-neutral home for many of the fastest-growing open source projects, including Kubernetes, Prometheus, and Envoy. <a target="_blank" href="https://www.cncf.io/">Ref</a> Acronym(4)
+    7.	A resource to store non-confidential data in key-value pairs. <a target="_blank" href="https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/">Ref</a> (9)
+    8.	It provides the ability to extend Kubernetes API and create new resources. <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/">Ref</a> Acronym(3)
+    10.	A lightweight and portable executable image that contains the application and all of it's dependencies. <a target="_blank" href="https://kubernetes.io/docs/concepts/overview/components/">Ref</a> (9)
+    12.	An agent that runs on each node in the cluster, It makes sure that containers are running in a pod and reports on health and status using Health probes. <a target="_blank" href="https://kubernetes.io/docs/concepts/overview/components/">Ref</a> (7)
+    13.	I am an API object that manages external access to the services in a cluster, typically HTTP. <a target="_blank" href="https://kubernetes.io/docs/concepts/services-networking/ingress/">Ref</a> (7)
+    15.	I manage a stable set of replica Pods running at any given time and am often used as a guarantee of a specified number of identical Pods. <a target="_blank" href="https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/">Ref</a> (10)
+    16.	It maintains network rules on nodes to allow network communication to your Pods from network sessions inside or outside of your cluster. <a target="_blank" href="https://kubernetes.io/docs/concepts/overview/components/">Ref</a> (4,5)
+exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

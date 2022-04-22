@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Google Cloud Storage</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword checks your knowledge in Google Cloud Storage.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: gcs-1
+  exolve-title: <a href="../">Home</a> | Google Cloud Storage
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Mahak Faheem : <a target="_blank" href="https://twitter.com/mahakfaheem">Twitter</a> | <a target="_blank" href="https://www.linkedin.com/in/mahak-faheem-704491220">Linkedin</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  18
+  exolve-height: 21
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    .......A..........
+    .......R.V........
+    .....BUCKET.......
+    .......H.R........
+    .......I.S....B.O.
+    .......V.I...TURBO
+    .......E.O....C.J.
+    .....S...N.A..K.E.
+    .....T.E.I.L..E.C.
+    .....A.N.N.L..T.T.    
+    U....N.C.GSUTIL...
+    SIGNEDURL..S..O...
+    .....A.Y...E..C...
+    .....R.P.C.R..K...
+    ...AUDITLOGS......
+    .......E.L........
+    .......D.D........
+    .........L........
+    .........I........
+    .........N........
+    ......LIFECYCLE...
+  exolve-across:
+    3.	I am a container with a unique name. I can hold infinite number of data-objects. <a target="_blank" href="https://cloud.google.com/storage/docs/creating-buckets?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6)
+    6.	_______ replication allows to asynchronously replicate newly written cloud storage objects to separate region within 15 minutes. <a target="_blank" href="https://cloud.google.com/storage/docs/turbo-replication?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (5)
+    11.	If you are a CLI pro, you'll find me handy to access your cloud storage. <a target="_blank" href="https://cloud.google.com/storage/docs/quickstart-gsutil?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6)
+    12.	I provide limited permission and time to access to a specific Cloud Storage resource. <a target="_blank" href="https://cloud.google.com/storage/docs/access-control/signed-urls?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6,3)
+    14.	I allow you to track API operations performed in Cloud Storage. <a target="_blank" href="https://cloud.google.com/storage/docs/access-logs?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (5,4)
+    15.	Object ____ management is a feature that helps in efficient cost management by offering features such as TTL, object-downgrading, etc. <a target="_blank" href="https://cloud.google.com/storage/docs/lifecycle?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+  exolve-down:
+    1.	I am a storage class with the lowest cost though I have a minimum storage duration of 365 days. <a target="_blank" href="https://cloud.google.com/storage/docs/storage-classes?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-#archive">Ref</a> (7)
+    2.	I can help you retain non-current versions of your objects. <a target="_blank" href="https://cloud.google.com/storage/docs/object-versioning?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (10)
+    4.	A feature that allows you to configure a data retention policy for a Cloud Storage bucket that governs how long objects in the bucket must be retained. <a target="_blank" href="https://cloud.google.com/storage/docs/bucket-lock?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6,4)
+    5.	I am an individual entry in a cloud storage bucket. (6)
+    7.	What is the default storage class for a cloud storage bucket ? <a target="_blank" href="https://cloud.google.com/storage/docs/storage-classes?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    8.	A principal role added to allow public access to your storage objects <a target="_blank" href="https://cloud.google.com/storage/docs/access-control/making-data-public?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    9.	Google Cloud Storage keeps your data ______ by default. <a target="_blank" href="https://cloud.google.com/storage/docs/encryption?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    10.	By default buckets are created in this region? <a target="_blank" href="https://cloud.google.com/storage/docs/creating-buckets?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (2)
+    13.	Storage class for infrequently accessed data with 90 days as minimum duration. <a target="_blank" href="https://cloud.google.com/storage/docs/storage-classes?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

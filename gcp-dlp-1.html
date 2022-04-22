@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="exolve-m.css?v1.29"/>
+<script src="exolve-m.js?v1.29"></script>
+
+<title>Google Cloud DLP (Data Loss Preventation)</title>
+
+</head>
+<body>
+
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-preamble: 
+    <p>This crossword tests your knowledge on Google Cloud Data Loss Prevention (DLP). Check out the <a href="https://cloud.google.com/dlp/?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Google Cloud Security Home Page<a/>.</p> 
+    <p>A clue both across and down may have a <b>Ref</b> link that points you towards material to help you discover the word and learn more about the topic.</p>
+  exolve-postscript:
+  exolve-id: dlp-1
+  exolve-title: <a href="../">Home</a> | Google Cloud DLP (Data Loss Prevention) Crossword
+
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  exolve-setter: Grace Mollison : <a target="_blank" href="https://www.twitter.com/grapesfrog">Twitter</a>
+  exolve-option: colour-active:lightyellow
+  exolve-option: colour-input:#bb3b80 color-arrow:lightyellow
+  exolve-option: colour-light-label-input:white
+  exolve-option: colour-light-text-input:white
+  exolve-option: colour-button:#bb3b80 color-button-hover:purple
+
+  exolve-width:  23
+  exolve-height: 23
+
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    ..........H......I.....
+    ..........Y......N.....
+    ..........B....MASKING.
+    .....R....R......P.....
+    .....E....I......E.....
+    .....D.DEIDENTIFICATION
+    .....A.......W...T.....
+    .....C.......O...I.....
+    ...B.T.......W.B.ONEWAY
+    .T.U.I..C.LOCATION.....
+    .R.C.O..R....Y.G.......
+    RISKANALYSIS...Q.......
+    .G.E....P....K.U.......
+    .G.T....TEMPLATE.......
+    .E.I....O....N.R.......
+    .R.N....K.INFOTYPE.....
+    ...G....E....N.........
+    ........Y....Y.........
+    V............M.........
+    PSEUDONYMIZATION.......
+    C............T.........
+    S............Y.........
+    C......................
+  exolve-across:
+    3.	Partially or fully replacing characters with a symbol. <a target="_blank" href="https://cloud.google.com/dlp/docs/deidentify-sensitive-data?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (7)
+    5.	I mask, delete, or otherwise obscure sensitive data. <a target="_blank" href="https://cloud.google.com/dlp/docs/deidentify-sensitive-data?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (16)
+    9.	I am an irreversible token. <a target="_blank" href="https://cloud.google.com/dlp/docs/pseudonymization?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (3,3)
+    12.	Specify this to determine where your data is processed. <a target="_blank" href="https://cloud.google.com/dlp/docs/specifying-location?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    13.	I am a job type that looks at de-identified data and returns metrics about the likelihood that the data can be re-identified. <a target="_blank" href="https://cloud.google.com/dlp/docs/concepts-job-triggers?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (4,8)
+    15.	Use me to create and persist configuration information to use with Cloud DLP. <a target="_blank" href="https://cloud.google.com/dlp/docs/creating-templates-inspect#about_templates">Ref</a> (8)
+    16.	Use me to to define what to scan for. <a target="_blank" href="https://cloud.google.com/dlp/docs/concepts-infotypes?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (8)
+    18.	De-identification technique that replaces sensitive data values with cryptographically generated tokens. <a target="_blank" href="https://cloud.google.com/dlp/docs/pseudonymization?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (16)
+  exolve-down:
+    1.	Use this method type to scan data from virtually any source & store findings in Google Cloud. <a target="_blank" href="https://cloud.google.com/dlp/docs/concepts-method-types#hybrid-methods">Ref</a> (6)
+    2.	I am a job type that looks for sensitive data according to your definition. <a target="_blank" href="https://cloud.google.com/dlp/docs/concepts-job-triggers?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (10)
+    4.	Remove sensitive data matches. <a target="_blank" href="https://cloud.google.com/dlp/docs/classification-redaction#automatic_text_redaction">Ref</a> (9)
+    6.	I am a token that can be reversed. <a target="_blank" href="https://cloud.google.com/dlp/docs/pseudonymization?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (3,3)
+    7.	I am a common generalization technique that Cloud DLP supports. <a target="_blank" href="https://cloud.google.com/dlp/docs/concepts-bucketing?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (9)
+    8.	If you store Cloud DLP scan results in me then you can easily analyse & create reports to give insights. <a target="_blank" href="https://cloud.google.com/dlp/docs/analyzing-and-reporting#run-analytics-in-bigquery">Ref</a> (8)
+    10.	Use me to schedule a scan job. <a target="_blank" href="https://cloud.google.com/dlp/docs/creating-job-triggers#about_inspection_jobs_and_job_triggers">Ref</a> (7)
+    11.	You can use me to re-identify data if I was used to originally de-identify it. <a target="_blank" href="https://cloud.google.com/dlp/docs/deidentify-sensitive-data?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (6,3)
+    14.	Property of a dataset that indicates the re-identifiability of its records. <a target="_blank" href="https://cloud.google.com/dlp/docs/concepts-risk-analysis?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> (1,9)
+    17.	Use me to to help mitigate the risk of data exfiltration. <a target="_blank" href="https://cloud.google.com/dlp/docs/securing-dlp?utm_source=ext&utm_medium=partner&utm_campaign=CDR_rom_gcp_cloudcrossword_021022&utm_content=-">Ref</a> Acroynm (5)  
+exolve-end
+
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  const firebaseConfig = {
+  apiKey: "AIzaSyDlKR9yzxoQHMk3UGpO9jZzAF0UMW--Wdk",
+  authDomain: "cloud-crosswords.firebaseapp.com",
+  projectId: "cloud-crosswords",
+  storageBucket: "cloud-crosswords.appspot.com",
+  messagingSenderId: "742342520790",
+  appId: "1:742342520790:web:e67722892937e885ae3e77",
+  measurementId: "G-V99651YGVF"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
